@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import pool from "../config/database";
-import { Client } from "./Client";
+import { Client } from "../models/clients.model";
 
 
 // Utility function to handle errors
