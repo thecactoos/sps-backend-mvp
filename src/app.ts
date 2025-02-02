@@ -7,6 +7,7 @@ import warehouseRoutes from "./routes/aaa.routes";
 import clientsRoutes from "./routes/clients.routes";
 import leadsRoutes from "./routes/leads.routes";
 import ordersRoutes from "./routes/orders.routes";
+import usersRoutes from "./routes/users.routes";
 
 import pool from "./config/database";
 
@@ -26,9 +27,9 @@ app.use("api/warehouse", warehouseRoutes);
 // app.use("api/categories", categories);
 app.use("api/clients", clientsRoutes);
 app.use("api/leads", leadsRoutes);
-app.use("api/names", );
-app.use("api/orders", );
-app.use("api/users", );
+// app.use("api/names");
+app.use("api/orders", ordersRoutes);
+app.use("api/users", usersRoutes);
 
 
 
