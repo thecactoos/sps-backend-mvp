@@ -3,7 +3,6 @@ import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
 import dotenv from "dotenv";
-import warehouseRoutes from "./routes/aaa.routes";
 import clientsRoutes from "./routes/clients.routes";
 import leadsRoutes from "./routes/leads.routes";
 import ordersRoutes from "./routes/orders.routes";
@@ -22,7 +21,6 @@ app.use(express.json());
 app.use(helmet());
 app.use(morgan("dev"));
 
-app.use("api/warehouse", warehouseRoutes);
 // app.use("api/brands", warehouseRoutes);
 // app.use("api/categories", categories);
 app.use("api/clients", clientsRoutes);
